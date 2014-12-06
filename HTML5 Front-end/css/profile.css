@@ -1,0 +1,35 @@
+div.body {
+	padding-top:20px;
+}
+
+#profile-photo {
+	width:128px;
+	height:128px;
+	border: 1px solid black;
+}
+
+#profile-name {
+	font-size:24px;
+	color:#7f8c8d;
+}
+
+#profile-karma {
+	padding:10px;
+	background-color:#ecf0f1;
+	color:red;
+}
+
+#recent-act-header {
+	color:#3498db;
+	margin-bottom:30px;
+}
+
+#recent-act-container {
+	margin-left:10px;
+	top:30px;
+	position:relative;
+}
+
+.recent-act-item {
+	margin-left:10px;
+}

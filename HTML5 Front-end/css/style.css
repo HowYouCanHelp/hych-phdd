@@ -1,0 +1,40 @@
+.feed {
+	box-shadow: 0px 0px 3px #ecf0f1;
+	min-height: 100px;
+}
+
+.picture {
+	border: 1px solid #ecf0f1;
+}
+
+.feed-in-right{
+	font-family: 'Lato', sans-serif;
+	color: #3498db;
+	padding-left: 10px !important;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.feed-in-right h5 {
+	font-size: 0.9em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	padding-bottom: 4px;
+}
+
+.org-name{
+	box-shadow: 0px 2px #ecf0f1;
+}
+
+.post-desc  p{
+	font-size: 13px;
+	color: #7f8c8d;
+	line-height: 14px;
+	text-align:justify;
+}
+
+.feed-in-left {
+	margin-top: 15px;
+	padding-right: 3px !Important;
+}
