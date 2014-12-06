@@ -1,0 +1,19 @@
+Version 4.0 (September 16)
+ - Added skeleton (controllers) for Finance, and Barangay Assistant (Events, Tasks, Notes, and Messages)
+
+Version 4.1 (September 17)
+ - Added [modular] skeleton for user management (users, roles, privileges)
+
+Version 4.2 (September 18)
+ - Added skeleton for other Barangay systems: Senior's citizen, Student's Monitoring System, Health, Incident Management System, Employment System
+
+Version 4.3 (September 24)
+ - DB schema change: e2g2_sep24_v7.sql
+ - changed 'sessions' to 'auth'
+ - started 'module' class
+
+Version 4.4 (October 3)
+ - continued 'module' class
+
+Version 4.6 (October 16)
+ - finished 'module' class, converted it to MY_Controller and MY_Model

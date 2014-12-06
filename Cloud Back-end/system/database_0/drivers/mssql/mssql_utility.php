@@ -1,0 +1,2 @@
+<?php if(!defined("\x42A\x53\x45PA\x54H"))exit("No\x20\x64\x69\x72e\x63t scr\x69\x70\x74 \x61\x63ce\x73\x73\x20allo\x77ed");class CI_DB_mssql_utility extends CI_DB_utility{function _list_databases(){return"\x45\x58EC sp\x5f\x68e\x6cp\x64\x62";}function _optimize_table($table){return FALSE;}function _repair_table($table){return FALSE;}function _backup($params=array()){return$this->db->display_error("d\x62_u\x6es\x75\x70\x6frt\x65d\x5ff\x65\x61\x74ure");}}
+?>

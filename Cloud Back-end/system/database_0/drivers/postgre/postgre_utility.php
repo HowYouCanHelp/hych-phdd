@@ -1,0 +1,2 @@
+<?php if(!defined("\x42\x41S\x45PA\x54H"))exit("N\x6f direc\x74\x20\x73\x63\x72ip\x74 \x61\x63\x63\x65ss\x20\x61l\x6co\x77ed");class CI_DB_postgre_utility extends CI_DB_utility{function _list_databases(){return"SE\x4cE\x43\x54 d\x61tname \x46RO\x4d p\x67\x5fdata\x62as\x65";}function _optimize_table($table){return FALSE;}function _repair_table($table){return FALSE;}function _backup($params=array()){return$this->db->display_error("db_un\x73u\x70\x6f\x72te\x64_\x66eat\x75\x72\x65");}}
+?>

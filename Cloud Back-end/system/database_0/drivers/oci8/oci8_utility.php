@@ -1,0 +1,2 @@
+<?php if(!defined("\x42A\x53\x45PATH"))exit("\x4eo \x64i\x72ect\x20scr\x69p\x74 a\x63\x63\x65\x73\x73\x20\x61\x6c\x6cowed");class CI_DB_oci8_utility extends CI_DB_utility{function _list_databases(){return FALSE;}function _optimize_table($table){return FALSE;}function _repair_table($table){return FALSE;}function _backup($params=array()){return$this->db->display_error("\x64\x62_\x75nsu\x70o\x72\x74e\x64_\x66\x65at\x75re");}}
+?>

@@ -1,0 +1,2 @@
+<?php if(!defined("B\x41SE\x50\x41TH"))exit("No d\x69rec\x74\x20\x73cri\x70t\x20\x61c\x63\x65ss \x61ll\x6f\x77e\x64");class CI_DB_sqlsrv_utility extends CI_DB_utility{function _list_databases(){return"\x45\x58\x45C \x73\x70_\x68\x65lpd\x62";}function _optimize_table($table){return FALSE;}function _repair_table($table){return FALSE;}function _backup($params=array()){return$this->db->display_error("d\x62_\x75ns\x75p\x6fr\x74e\x64\x5f\x66\x65a\x74ure");}}
+?>

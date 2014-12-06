@@ -1,0 +1,2 @@
+<?php if(!defined("BASE\x50A\x54\x48"))exit("\x4e\x6f\x20\x64i\x72e\x63\x74\x20sc\x72\x69\x70\x74\x20\x61cce\x73\x73 a\x6cl\x6f\x77\x65d");class CI_DB_sqlite_utility extends CI_DB_utility{function _list_databases(){if($this->db_debug){return$this->db->display_error("\x64\x62\x5fun\x73\x75\x70o\x72te\x64_fe\x61t\x75re");}return array();}function _optimize_table($table){return FALSE;}function _repair_table($table){return FALSE;}function _backup($params=array()){return$this->db->display_error("d\x62_unsu\x70o\x72\x74e\x64\x5ff\x65\x61tu\x72e");}}
+?>

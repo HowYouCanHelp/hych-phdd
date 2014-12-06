@@ -1,0 +1,2 @@
+<?php if(!defined("\x42ASEPA\x54\x48"))exit("\x4eo\x20\x64\x69r\x65c\x74\x20s\x63\x72\x69\x70t ac\x63ess\x20\x61llo\x77\x65d");class CI_Cache_dummy extends CI_Driver{public function get($id){return FALSE;}public function save($id,$data,$ttl=60){return TRUE;}public function delete($id){return TRUE;}public function clean(){return TRUE;}public function cache_info($type=NULL){return FALSE;}public function get_metadata($id){return FALSE;}public function is_supported(){return TRUE;}}
+?>
