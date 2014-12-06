@@ -7,6 +7,7 @@
 	<title>HowYouCanHelp</title>
 	<link href = 'bootstrap/css/bootstrap.min.css' rel = 'stylesheet' type = 'text/css'>
 	<link href = 'css/template.css' rel = 'stylesheet' type = 'text/css'>
+	<link href = 'css/style.css' rel = 'stylesheet' type = 'text/css'>
 	<link href = 'css/profile.css' rel = 'stylesheet' type = 'text/css'>
 	<!-- Google Fonts -->
 	<!--<link href = 'http://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet' type = 'text/css'>-->
@@ -15,13 +16,13 @@
 </head>
 <body>
 	<div id="header" class="">
-		<img src="" id="search-icon" class="pull-left"/>
-		<h1 id="logo">HowYouCanHelp</h1>
+		<img src="imgs/search.png" id="search-icon" class=" icon pull-left"/>
+		<center><img class="img-responsive header-logo" src="imgs/logo.png"></center>
 	</div>
 	<div id="profile" class="body">
 		<center>
-			<img src="" id="profile-photo"/>
-			<h1 id="profile-name">Juan Dela Cruz</h1>
+			<img src="imgs/juan.jpg" id="profile-photo"/>
+			<h4 id="profile-name">Juan Dela Cruz</h4>
 			<span id="profile-karma">3,500 Good Karma</span>
 		</center>
 		<div id="recent-act-container">
@@ -52,19 +53,33 @@
 			</div>
 		</div>
 	</div>
-	<div id="footer" class="">
-		<div class="footer-tab col-xs-4">
-			<img src="" />
-			<span class="footer-tab-label">MAP</span>
-		</div>
-		<div class="footer-tab col-xs-4">
-			<img src="" />
-			<span class="footer-tab-label">HOME</span>
-		</div>
-		<div class="footer-tab col-xs-4">
-			<img src="" />
-			<span class="footer-tab-label">PROFILE</span>
-		</div>
+<div id="footer" class="">
+		<a href="#">
+			
+			<div id="map" class="footer-tab col-xs-4">
+				<center>
+					<span class="icon" ></span>
+					<span class="footer-tab-label">MAP</span>
+				</center>
+			</div>
+		</a>
+		<a href="#">
+			<div id="home" class="footer-tab col-xs-4">
+			<center>
+				<span class="icon" ></span>
+				<span class="footer-tab-label">HOME</span>
+			</center>
+			</div>
+		</a>
+		<a href="#">
+			<div id="profile" class="footer-tab col-xs-4 hych-active">
+				<center>
+					<span class="icon" ></span>
+					<span class="footer-tab-label">PROFILE</span>
+				</center>
+			</div>
+		</a>
+		
 	</div>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 div.body {
 	padding-top:20px;
 }
@@ -9,19 +10,24 @@ div.body {
 }
 
 #profile-name {
-	font-size:24px;
+	font-size:14px;
 	color:#7f8c8d;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 15px;
 }
 
 #profile-karma {
-	padding:10px;
+	padding:5px 15px ;
 	background-color:#ecf0f1;
-	color:red;
+	color:#e74c3c;
+	font-weight: 700;
 }
 
 #recent-act-header {
 	color:#3498db;
-	margin-bottom:30px;
+	margin-bottom:15px;
+	font-size: 14px;
 }
 
 #recent-act-container {
@@ -32,4 +38,9 @@ div.body {
 
 .recent-act-item {
 	margin-left:10px;
+	font-size: 12px;
+}
+
+#recent-act-list hr {
+margin: 15px !important;
 }

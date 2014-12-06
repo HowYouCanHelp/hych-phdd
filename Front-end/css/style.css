@@ -80,3 +80,12 @@ body {
 	margin-top: 60%;
 	margin-bottom: 20px;
 }
+.post-date p {
+	line-height: 10px;
+}
+.post-date, .post-time, .post-place{
+	line-height: 2px;
+	font-size: 12px;
+	padding-top: 0px !Important;
+	padding-bottom: 0px !Important;
+}

@@ -1,11 +1,12 @@
 div#header {
 	background-color:#3498db;
-	padding:10px;
+	padding:2px;
 	margin:0px;
 	top:0px;
 	position:fixed;
 	width:100%;
-	height:40px;
+	height:30px;
+	z-index: 1000;
 }
 
 h1#logo {
@@ -15,7 +16,30 @@ h1#logo {
 	text-align:center;
 }
 
+.icon {
+	height: 25px;
+	width: 25px;
+	display:inline-block;
+	background-size:100% 100%;
+}
 
+#profile .icon {
+	background-image: url('../imgs/profile.png');
+}
+
+#home .icon {
+	background-image: url('../imgs/home.png');
+}
+
+#map .icon {
+	background-image: url('../imgs/map.png');
+	
+}
+
+
+.header-logo {
+	width: 50%;
+}
 div#footer {
 	/* padding:10px; */
 	bottom:0px;
@@ -25,16 +49,56 @@ div#footer {
 	width:100%;
 	text-align:center;
 	color:#7f8c8d;
+	z-index: 1000;
 }
 
 
 div.footer-tab {
 	height:100%;
-	padding:10px;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.footer-tab .footer-tab-label {
+	/* margin-top:15px; */
+	/* display:inline; */
+	vertical-align:middle;
+}
+
+.footer-tab a{
+	margin-top:15px;
+	color: #7F8C8D !important;
+}
+
+span.footer-tab-label {
+	margin-top: 5px;
+	top:-10px;
+	position:relative;
+	display:inline-block;
+	color: #7F8C8D !important;
+	font-size: 11px;
+	font-family: 'Lato', sans-serif;
+}
+
+#home.hych-active .icon{
+	background-image: url('../imgs/home-active.png');
+}
+
+#profile.hych-active .icon{
+	background-image: url('../imgs/profile-active.png');
+}
+
+#map.hych-active .icon{
+	background-image: url('../imgs/map-active.png');
+}
+
+.hych-active .footer-tab-label {
+	color: #3498db !important;
 }
 
 div.body {
 	top:40px;
 	position:relative;
 	padding-bottom:80px;
+	z-index: 100;
 }
