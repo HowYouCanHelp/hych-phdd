@@ -89,3 +89,29 @@ body {
 	padding-top: 0px !Important;
 	padding-bottom: 0px !Important;
 }
+
+.report {
+	bottom: 40px;
+	position: fixed;
+	right: 10px;
+}
+
+.report-icons {
+	width: 50px;
+	height: auto;
+}
+
+.report-modal {
+	bottom: 90px;
+	position: fixed;
+	width: 95%;
+}
+
+.report-title {
+	font-size: 16px;
+}
+
+.report-row {
+	margin-top: 10px;
+	line-height:13px;
+}
