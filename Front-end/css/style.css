@@ -1,0 +1,82 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+.feed {
+	box-shadow: 0px 0px 1px #ecf0f1;
+	min-height: 100px;
+}
+
+.picture {
+	border: 1px solid #ecf0f1;
+}
+
+.feed-in-right{
+	color: #3498db;
+	padding-left: 10px !important;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.feed-in-right h5 {
+	font-size: 0.9em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	padding-bottom: 4px;
+}
+
+.org-name{
+	box-shadow: 0px 2px #ecf0f1;
+}
+
+.post-desc  p{
+	font-size: 13px;
+	color: #7f8c8d;
+	line-height: 14px;
+	text-align:justify;
+}
+
+.feed-in-left {
+	margin-top: 15px;
+	padding-right: 3px !Important;
+}
+
+.buttons {
+	margin-bottom: 15px;
+}
+
+.join {
+	background: #e74c3c;
+	border-radius: 5px;
+	color: white;
+	font-size: 14px;
+	padding: 0px 15px;
+	
+}
+
+.share{
+	margin-top: 2px;
+	font-size: 14px;
+	color: #3498db;
+}
+
+.share img {
+	width: 20px;
+}
+
+.login {
+	min-height: 528px;
+	background-image: url('../imgs/bg.jpg');
+	background-size: 100% auto;
+}
+
+.login-btn {
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.logo {
+	margin-top: 60%;
+	margin-bottom: 20px;
+}
