@@ -43,10 +43,7 @@ class Events extends MY_Controller
 		$this->load->view('events/list', array('items' => $items));
 	}
 
-	public function view($id) {
-		$row = $this->db->where('id', $id)->get('events');
-		$this->load->view('events/indiv', array('list' => $row));
-	}
+	/*
 
 	public function add() {
 		$options = array();

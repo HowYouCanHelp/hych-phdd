@@ -12,6 +12,10 @@ $otherHead = isset($otherHead) ? $otherHead : '';
 
 		<?php echo link_tag('public_html/bootstrap3-flat/css/bootstrap.min.css'); ?>
 		<?php echo link_tag('public_html/css/style.css'); ?>
+		
+		<?php foreach($css as  $c) : ?>
+			<?php echo link_tag('public_html/css/'.$c.'.css'); ?>
+		<?php endforeach; ?>
 		<?php /* //echo link_tag('public_html/css/global.css'); ?>
 		<?php //echo link_tag('public_html/css/style.css'); ?>
 		<?php echo link_tag('public_html/css/fonts/css/font-awesome.css'); ?>
@@ -228,12 +232,12 @@ $otherHead = isset($otherHead) ? $otherHead : '';
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#aboutLL">Home</a>
+                        <a class="page-scroll" href="<?php echo site_url('events'); ?>">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#lifelines">Map</a>
+                        <a class="page-scroll" href="http://magissolutions.com/howyoucanhelp">Map</a>
                     </li>
-                   <li>
+					<li>
                         <a class="page-scroll" href="#line">Log-in</a>
                     </li>
                     <!--<li>

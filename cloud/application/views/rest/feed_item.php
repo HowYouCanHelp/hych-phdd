@@ -12,6 +12,7 @@
 			<div class="post-desc">
 				<p><?php echo $description; ?></p>
 			</div>
+			<!--
 			<div class="post-date row">
 				<div class="col-xs-3">
 					<p>Date:</p>
@@ -35,7 +36,7 @@
 				<div class="col-xs-9">
 					<p><?php echo $venue; ?></p>
 				</div>
-			</div>
+			</div>-->
 			<?php if(strlen($event_photo) > 0) : ?>
 			<div class="post-pic">
 				<img class="img-responsive picture" src="<?php echo base_url(UPLOAD_PATH.'/'.$event_photo); ?>">
@@ -65,7 +66,7 @@
 					<button id="" class="pull-right <?php echo $action_type; ?> btn" data-action_type="<?php echo $action_type; ?>" data-karma_incentive="<?php echo $join_incentive; ?>" data-id="<?php echo $event_id; ?>" data-url="<?php echo $action_url; ?>">
 						<?php echo $action_button; ?> 
 						<?php if($action_type == 'join') : ?>
-							<span class="label label-danger"><?php echo $join_incentive; ?></span> 
+							<span class="label label-danger"><?php echo strlen($join_incentive) > 0 ? $join_incentive : 100; ?></span> 
 						<?php endif; ?>
 					</button>
 				<?php endif; ?>
