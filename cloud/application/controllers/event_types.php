@@ -7,10 +7,8 @@ class Event_types extends MY_Controller
 
 	}
 
-	/**
-	 * Fetch and display records
-	 * @return void
-	 */
+	
+	 /*
 	public function index() {
 		$list = $this->db->get('event_types');
 		$this->load->view('event_types/list', array('list' => $list));
@@ -33,6 +31,6 @@ class Event_types extends MY_Controller
 
 	public function delete($id) {
 	}
-
+*/
 
 }

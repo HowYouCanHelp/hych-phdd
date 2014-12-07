@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Organization extends MY_Controller 
+class Organizations extends MY_Controller 
 {
 	public function __construct() {
 		parent::__construct();

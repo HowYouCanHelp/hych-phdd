@@ -73,7 +73,7 @@
 					<?php echo $val; ?>
 				</label></td>
 				<?php elseif(isset($images) && in_array($col, $images)) : ?>
-				<td class="text-center"><img src="<?php echo $val; ?>" /></td>
+				<td class="text-center"><img src="<?php echo strpos($val, 'http') == FALSE ? base_url('uploads/'.$val) : $val; ?>" /></td>
 				<?php elseif(isset($badges) && in_array($col, $badges)) : ?>
 				<td class="text-center"><span class="badge text-center"><?php echo $val; ?></span></td>
 				<?php elseif(isset($dates) && in_array($col, $dates) && $val != '') : ?>

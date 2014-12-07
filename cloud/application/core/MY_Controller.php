@@ -55,6 +55,7 @@ class MY_Controller extends CI_Controller {
 			$options['upload'] = $this->_model->add_upload();
 			$options['upload_config'] = $this->_model->add_upload_config();
 			$options['upload_error_view'] = $this->_model->add_upload_error_view();
+			$options['data']['multipart_form'] = true;
 		}
 		
 		$this->crud->add($this->_model->add_table(),
@@ -64,10 +65,17 @@ class MY_Controller extends CI_Controller {
 	
 	public function edit($id) {
 		$this->_model->before_edit($id);
+		$options = $this->_model->edit_crud_options($id);
+		if($this->_model->edit_upload() != null) {
+			$options['upload'] = $this->_model->edit_upload();
+			$options['upload_config'] = $this->_model->edit_upload_config();
+			$options['upload_error_view'] = $this->_model->edit_upload_error_view();
+			$options['data']['multipart_form'] = true;
+		}
 		$this->crud->edit($id,
 						$this->_model->edit_table(),
 						$this->_model->edit_view(),
-						$this->_model->edit_crud_options($id));
+						$options);
 	}
 	
 	public function delete($id) {
@@ -85,5 +93,3 @@ class MY_Controller extends CI_Controller {
 
 /* End of file service.php */
 /* Location: ~/ntsp/application/controllers/service.php */
-
-

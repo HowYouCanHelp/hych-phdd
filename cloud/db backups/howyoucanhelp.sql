@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS howyoucanhelp;
-CREATE DATABASE howyoucanhelp;
-use howyoucanhelp;
+-- DROP DATABASE IF EXISTS howyoucanhelp;
+-- CREATE DATABASE howyoucanhelp;
+-- use howyoucanhelp;
 
 --
 -- Table structure for table `ci_sessions`
@@ -32,7 +32,7 @@ CREATE TABLE `users` (
   `first_name` varchar(255) DEFAULT NULL,
   `middle_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
-  `karma` int(11),
+  `karma` int(11) DEFAULT 0,
   `about_me` text,
   `created_by` varchar(255) DEFAULT NULL,
   `created_on` datetime DEFAULT NULL,

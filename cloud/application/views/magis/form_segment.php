@@ -9,7 +9,11 @@
 			<legend><?php echo $form_title; ?></legend>
 			<div class="form-group">
 				<?php if(isset($declare_form)) : ?>
-				<form action="<?php echo site_url($form_action); ?>" method="post" >
+					<?php if(isset($multipart_form)) : ?>
+						<?php echo form_open_multipart($form_action); ?>
+					<?php else : ?>
+						<form action="<?php echo site_url($form_action); ?>" method="post" >
+					<?php endif; ?>
 				<?php endif; ?>
 					<?php if(isset($inputs)) {
 						$this->bootstrap->array_to_form($inputs, isset($options)?$options:null);

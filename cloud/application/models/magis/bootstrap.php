@@ -643,18 +643,20 @@ EOT;
 			} else if( isset($location) && in_array($field, $location)) {
 				$html .= $this->location(humanize($field), $table, $field, $maps[$field], array('values' => $values,
 																								'class' => $class));
-			} else if((isset($fk) && in_array($field, $fk)) || strpos($field, '_fk') > 0) {
+			} else if((isset($fk) && in_array($field, $fk)) || strpos($field, '_fk') !== FALSE ) {
 				$lookup_table = str_replace('_fk', '', $field);
 				$html .= $this->dropdown_horizontal(humanize($lookup_table), $table, $field, plural($lookup_table), array('values' => $values));
 			} else {
 				$type = 'text';
 				if($field == 'password') {
 					$type = 'password';
-				} else if(strpos($field, '_path') > 0 || strpos($field, '_uri') > 0) {
+				} else if(strpos($field, '_path') !== FALSE || strpos($field, '_uri') !== FALSE ) {
 					$type = 'file';
-				} else if(strpos($field, '_date') > 0 || strpos($field, '_on') > 0) {
+				} else if(strpos($field, 'date') !== FALSE || strpos($field, '_on') !== FALSE) {
 					$type = 'date';
-				}
+				} else if(strpos($field, 'datetime') !== FALSE || strpos($field, '_on') !== FALSE ) {
+					$type = 'datetime-local';
+				} 
 				$html .= $this->textfield_horizontal(humanize($field), $table, $field, array('rules' => $rules[$field],
 																							'values' => $values,
 																							'class' => $class,

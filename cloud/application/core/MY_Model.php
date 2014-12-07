@@ -150,6 +150,7 @@ class MY_Model extends CI_Model {
      * ------------------------------------------------------------ */
 	
 	public function manage_view_data($no_filter = true) {
+		$fields = $this->_list_fields();
 		$data = array('human_module' => $this->_human_singular,
 					'table_title' => $this->manage_title(),
 					'home' => $this->_module_home,
@@ -159,6 +160,9 @@ class MY_Model extends CI_Model {
 					'buttons' => $this->manage_buttons());
 		if($no_filter) {
 			$data['table'] = $this->manage_table();
+		}
+		if(in_array('photo_uri', $fields)) {
+			$data['images'] = array('photo_uri');
 		}
 		return $data;
 	}
@@ -228,10 +232,18 @@ class MY_Model extends CI_Model {
 			$data['checkbox_table'] = $this->_children_assoc_table;
 			unset($data['add_button']);
 		}
+		$fields = $this->_list_fields();
+		if(in_array('photo_uri', $fields)) {
+			$data['multipart_form'] = true;
+		}
 		return $data;
 	}
 	
 	public function add_upload() {
+		$fields = $this->_list_fields();
+		if(in_array('photo_uri', $fields)) {
+			return 'photo_uri';
+		}
 		return null;
 	}
 	
@@ -346,6 +358,22 @@ class MY_Model extends CI_Model {
 				}
 			}
 		}
+	}
+	
+	public function edit_upload() {
+		$fields = $this->_list_fields();
+		if(in_array('photo_uri', $fields)) {
+			return 'photo_uri';
+		}
+		return null;
+	}
+	
+	public function edit_upload_config() {
+		return null;
+	}
+	
+	public function edit_upload_error_view() {
+		return 'error';
 	}
 	
 	/* --------------------------------------------------------------

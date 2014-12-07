@@ -11,12 +11,20 @@ class Rest_model extends MY_Model {
 						->row();
 	}
 	
+	public function get_event_type_id($event_type) {
+		return $this->db->select('id')
+						->where('name', $event_type)
+						->get('event_types', 1)
+						->row()
+						->id;
+	}
+	
 	public function verify_event_fk($event_fk) {
 		return $this->db->where('id', $event_fk)->get('events', 1)->row();
 	}
 	
 	public function update_karma($user_fk, $new_karma) {
-		$this->db->where('user_fk' => $user_fk)
+		$this->db->where('id', $user_fk)
 				->update('users', array('karma' => $new_karma));
 	}	
 	

@@ -2,4 +2,5 @@
 
 class Users_model extends MY_Model 
 {
+	protected $_delete_human_identifier = 'first_name'; 
 }

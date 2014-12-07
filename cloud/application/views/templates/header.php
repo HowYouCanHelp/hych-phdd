@@ -7,14 +7,11 @@ $otherHead = isset($otherHead) ? $otherHead : '';
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>LifeLine - View your different Life Lines</title>
-		<meta property="fb:admins" content="722379423"/>
-		<meta property="og:title" content="LifeLine - View your different Life Lines"/>
-		<meta property="og:image" content="<?php echo base_url('public_html/images/lllogo.JPG'); ?>"/>
-		<meta property="og:description" content="All data from across the internet about #MarioPH. News from Pag-asa, floods statuses by MMDA, evacuation areas, calls for rescue, donation drop-offs and calls for volunteers."/>
+		<title>HowYouCanHelp - Making Helping Mainstream.</title>
 
 
 		<?php echo link_tag('public_html/bootstrap3-flat/css/bootstrap.min.css'); ?>
+		<?php echo link_tag('public_html/css/style.css'); ?>
 		<?php /* //echo link_tag('public_html/css/global.css'); ?>
 		<?php //echo link_tag('public_html/css/style.css'); ?>
 		<?php echo link_tag('public_html/css/fonts/css/font-awesome.css'); ?>
@@ -23,6 +20,9 @@ $otherHead = isset($otherHead) ? $otherHead : '';
 		<?php echo link_tag('http://fonts.googleapis.com/css?family=Kaushan+Script'); ?>
 		<?php echo link_tag('http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'); ?>
 		<?php echo link_tag('http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'); */ ?>
+		
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 		
 		<script type="text/javascript" src="<?php echo base_url('public_html/js/jquery.js'); ?>"></script>
 		<script type="text/javascript" src="<?php echo base_url('public_html/js/bootstrap.min.js'); ?>"></script>
@@ -202,11 +202,13 @@ $otherHead = isset($otherHead) ? $otherHead : '';
 		<?php endif; ?>
 		<!-- NAVBAR
 ================================================== -->
-  
-<body id="page-top" class="index">
-
+	<style>
+		.navbar-default .navbar-nav>li>a {
+			color:white;
+		}
+	</style>
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#3498db;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -216,7 +218,7 @@ $otherHead = isset($otherHead) ? $otherHead : '';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Lifeline</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php echo base_url('public_html/img/logo.png'); ?>" style="height:25px;" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -226,13 +228,13 @@ $otherHead = isset($otherHead) ? $otherHead : '';
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#aboutLL">About LifeLine</a>
+                        <a class="page-scroll" href="#aboutLL">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#lifelines">Samples</a>
+                        <a class="page-scroll" href="#lifelines">Map</a>
                     </li>
                    <li>
-                        <a class="page-scroll" href="#line">LINE</a>
+                        <a class="page-scroll" href="#line">Log-in</a>
                     </li>
                     <!--<li>
                         <a class="page-scroll" href="#team">Team</a>

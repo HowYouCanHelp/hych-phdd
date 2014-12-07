@@ -324,12 +324,12 @@ class Generate extends CI_Controller {
 		$string .= "\t * @return void\n";
 		$string .= "\t */\n";
 		$string .= "\tpublic function index() {";
-		$string .= "\n\t\t\$list = \$this->db->get('$table');";
+		$string .= "\n\t\t\$list = \$this->db->get('$table')->result_array();";
 		$string .= "\n\t\t\$this->load->view('$table/list', array('list' => \$list));";
 		$string .= "\n\t}\n\n";
 		
 		$string .= "\tpublic function view(\$id) {";
-		$string .= "\n\t\t\$row = \$this->db->where('id', \$id)->get('$table');";
+		$string .= "\n\t\t\$row = \$this->db->where('id', \$id)->get('$table')->row_array();";
 		$string .= "\n\t\t\$this->load->view('$table/indiv', array('list' => \$row));";
 		$string .= "\n\t}\n\n";
 		

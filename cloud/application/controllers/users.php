@@ -7,10 +7,7 @@ class Users extends MY_Controller
 
 	}
 
-	/**
-	 * Fetch and display records
-	 * @return void
-	 */
+	/* 
 	public function index() {
 		$list = $this->db->get('users');
 		$this->load->view('users/list', array('list' => $list));
@@ -32,7 +29,7 @@ class Users extends MY_Controller
 	}
 
 	public function delete($id) {
-	}
+	} */
 
 
 }

@@ -50,6 +50,8 @@ define('MYSQL_DATE_FORMAT',				'Y-n-j');
 define('MYSQL_DATETIME_FORMAT',			'Y-n-j H:i:s');
 define('HUMAN_DATE_FORMAT',				'F d, Y');
 define('HUMAN_DATETIME_FORMAT',			'F d, Y h:i:s A');
+define('DATETIME_LOCAL_FORMAT',			'Y-m-d\TH:i:s');
+define('HTML_DATE_FORMAT',				'Y-m-d');
 define('UPLOAD_PATH',					'./uploads/');
 
 /*
